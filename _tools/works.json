@@ -1,0 +1,254 @@
+{
+  "owner": "panglezym",
+  "name": "赵永明",
+  "role": "AI 产品经理 · AI Product Manager",
+  "lead": "关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。这里收着我做过的产品设计练习，有可点击的高保真原型、PRD 和几份行业研究，每个都能直接在浏览器里打开。",
+  "focus": [
+    "多 Agent 系统",
+    "RAG 与知识图谱",
+    "数据产品",
+    "数字健康"
+  ],
+  "note": "这里的作品都是个人产品设计练习，不含任何公司内部数据；王者荣耀等品牌名只用来设定场景，与品牌方无关。",
+  "profile_intro": "AI 产品经理，关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。",
+  "profile_intro_en": "AI product manager, working on how AI agents land in real industries.",
+  "og_summary": "多 Agent 客服、AI 问数、AI 医嘱、慢病管理、汽车与医疗零售场景全景、企业 AI 落地白皮书",
+  "og_lines": [
+    "多 Agent 客服、AI 问数、",
+    "AI 医嘱、慢病管理、行业场景全景"
+  ],
+  "hero": [
+    "hok",
+    "medical-order",
+    "chronic-patient"
+  ],
+  "works": [
+    {
+      "slug": "hok",
+      "repo": "Honor-of-Kings-Intelligent-Customer-Service-Agent",
+      "title": "王者荣耀 · 多 Agent 智能客服",
+      "title_lines": [
+        "王者荣耀",
+        "多 Agent 智能客服"
+      ],
+      "en": "Multi-Agent Customer Service for Honor of Kings",
+      "short": "5 个专域 Agent 并行处理复合问题，含知识图谱与三级降级",
+      "desc": "为日均 5 万咨询、7 种语言设计的客服系统：5 个专域 Agent 并行处理复合问题，知识图谱多跳检索，超时熔断后三级降级升人工。设计文档和可点击演示合在一个页面里。",
+      "tags": [
+        "多 Agent",
+        "知识图谱",
+        "游戏客服"
+      ],
+      "pages": true,
+      "shot": {
+        "viewport": [
+          1440,
+          960
+        ],
+        "steps": [
+          {
+            "click_text": "核心场景：复合问题并行"
+          },
+          {
+            "click_text_exact": "下一步",
+            "repeat": 6,
+            "wait": 700
+          }
+        ]
+      }
+    },
+    {
+      "slug": "data-query",
+      "repo": "AI-Powered-Data-Query-Platform",
+      "title": "AI 问数平台",
+      "en": "AI-Powered Data Query Platform",
+      "short": "自然语言问数，指标语义层统一口径，行级权限强制注入",
+      "desc": "让不会写 SQL 的人用一句话拿到可信的数：指标语义层统一口径，行级权限在 SQL 层强制注入，每个回答都带口径和数据截止时间。9 个页面的高保真原型，附 PRD。",
+      "tags": [
+        "Text-to-SQL",
+        "语义层",
+        "数据产品"
+      ],
+      "pages": true,
+      "shot": {
+        "viewport": [
+          1440,
+          960
+        ],
+        "steps": [
+          {
+            "js": "document.getElementById('enterBtn').click()",
+            "wait": 1500
+          },
+          {
+            "click_text": "AI问数工作台",
+            "wait": 1000
+          },
+          {
+            "click_text_exact": "今天GMV多少",
+            "wait": 4000
+          }
+        ]
+      }
+    },
+    {
+      "slug": "medical-order",
+      "repo": "AI-Medical-Order-Execution-Engine",
+      "title": "AI 医嘱任务引擎",
+      "en": "AI Medical Order Execution Engine",
+      "short": "康养场景医嘱闭环，医生、护士、管理三端 22 页",
+      "desc": "康养中心的医嘱闭环：医生用自然语言下医嘱，AI 解析成结构化字段并拆成护士任务，扫腕带和药品双码核验后自动回写。医生、护士、管理三端 22 页原型，附 PRD。",
+      "tags": [
+        "医疗",
+        "工作流",
+        "人机协同"
+      ],
+      "pages": true,
+      "shot": {
+        "viewport": [
+          1440,
+          960
+        ],
+        "steps": []
+      }
+    },
+    {
+      "slug": "chronic-patient",
+      "repo": "chronic-care-patient",
+      "title": "慢愈 · 患者端",
+      "en": "Chronic Care · Patient App",
+      "short": "慢病管理 iOS App 高保真原型，16 屏",
+      "desc": "给糖尿病、高血压等慢病患者的健康管理 App：录数据、看 AI 分析、执行医嘱、做月度复盘。16 屏 iOS 高保真原型，附 PRD。",
+      "tags": [
+        "数字健康",
+        "iOS 原型"
+      ],
+      "pages": true,
+      "shot": {
+        "viewport": [
+          1100,
+          733
+        ],
+        "steps": [
+          {
+            "scroll_y": 2330,
+            "wait": 600
+          }
+        ],
+        "comment": "第 4 排三台手机：健康趋势、AI 助手、医生消息"
+      }
+    },
+    {
+      "slug": "chronic-doctor",
+      "repo": "chronic-care-doctor",
+      "title": "慢愈 · 医生端",
+      "en": "Chronic Care · Doctor Portal",
+      "short": "慢病随访 Web Portal 高保真原型，9 页",
+      "desc": "让主治医生在两次复诊之间也看得到病人：预警中心、远程医嘱、AI 月报审阅、临床 AI 助手。9 页 Web Portal 原型，和患者端成对。",
+      "tags": [
+        "数字健康",
+        "Web 原型"
+      ],
+      "pages": true,
+      "shot": {
+        "viewport": [
+          1440,
+          720
+        ],
+        "steps": [
+          {
+            "scroll_to_block_of_text": "今日总览",
+            "wait": 800
+          }
+        ]
+      }
+    },
+    {
+      "slug": "auto",
+      "repo": "Landscape-of-AI-Agent-Scenarios-in-the-Automotive-Industry",
+      "title": "汽车行业 Agent 场景全景",
+      "title_lines": [
+        "汽车行业",
+        "Agent 场景全景"
+      ],
+      "en": "AI Agent Scenarios in the Automotive Industry",
+      "short": "28 个场景、7 条跨场景协同链路",
+      "desc": "28 个场景覆盖车内体验、销售服务、运营管理、产业服务，每个场景写到定位、功能、架构、落地路径、KPI 和风险，另附 7 条跨场景协同链路。",
+      "tags": [
+        "行业研究",
+        "汽车"
+      ],
+      "pages": true,
+      "shot": {
+        "viewport": [
+          1000,
+          667
+        ],
+        "steps": [
+          {
+            "scroll_y": 30,
+            "wait": 600
+          }
+        ]
+      }
+    },
+    {
+      "slug": "health-retail",
+      "repo": "Overview-of-AI-Agent-Use-Cases-in-Healthcare-Retail",
+      "title": "医疗零售智能体全景",
+      "title_lines": [
+        "医疗零售",
+        "智能体全景"
+      ],
+      "en": "AI Agent Use Cases in Healthcare Retail",
+      "short": "16 个场景的方案、架构、落地路径与合规风险",
+      "desc": "药店、医药电商、互联网医院等零售侧的 16 个智能体场景，每个都有产品方案、技术架构、三期落地路径和合规风险分析。",
+      "tags": [
+        "行业研究",
+        "医疗零售"
+      ],
+      "pages": true,
+      "shot": {
+        "viewport": [
+          1440,
+          960
+        ],
+        "steps": []
+      }
+    },
+    {
+      "slug": "white-paper",
+      "repo": "China-Enterprise-AI-Landing-Strategy-White-Paper-2026",
+      "title": "2026 中国企业 AI 落地战略白皮书",
+      "title_lines": [
+        "2026 中国企业",
+        "AI 落地战略白皮书"
+      ],
+      "en": "China Enterprise AI Landing Strategy 2026",
+      "short": "五章加附录：周期、组织、技术路径、行业场景、治理",
+      "desc": "写给企业决策者：市场周期判断、AI 优先的组织设计、RAG 与 Agent 的技术路径、四个行业的场景图谱，以及风险与治理。五章加附录。",
+      "tags": [
+        "战略",
+        "白皮书"
+      ],
+      "pages": false,
+      "toc_card": {
+        "kicker": "WHITE PAPER · 2026",
+        "heading": [
+          "中国企业 AI",
+          "落地战略白皮书"
+        ],
+        "items": [
+          "卷首语",
+          "第一章　周期与判断",
+          "第二章　AI 优先的组织架构",
+          "第三章　通往落地的技术路径",
+          "第四章　行业场景图谱",
+          "第五章　风险与治理",
+          "附录　实战工具包与价格对比",
+          "结语"
+        ]
+      }
+    }
+  ]
+}
