@@ -2,17 +2,15 @@
 
 作品集站、个人主页 README、每个仓库的社交预览图都由同一份 `works.json` 生成，加作品或改文字只改这一份。`_tools/` 以下划线开头，GitHub Pages 不会发布它。
 
-## 本地在哪
+## 本地怎么放
 
-两个仓库克隆在 `~/工作日志_本地工程/github-portfolio/`：
+把这两个仓库克隆到同一个父目录下，生成器会按相对位置找到主页仓库：
 
 - `panglezym.github.io/`：作品集站和本目录
 - `panglezym/`：个人主页 README，生成器会直接写进去
 
-换电脑时重新克隆这两个就行：
-
 ```bash
-mkdir -p ~/工作日志_本地工程/github-portfolio && cd ~/工作日志_本地工程/github-portfolio && gh repo clone panglezym/panglezym.github.io && gh repo clone panglezym/panglezym
+gh repo clone panglezym/panglezym.github.io && gh repo clone panglezym/panglezym
 ```
 
 依赖：Python 3、Pillow、playwright（装好 chromium：`python3 -m playwright install chromium`）。
@@ -68,10 +66,9 @@ python3 _tools/build.py all           # 先全截再生成
 
 ## 规矩
 
-- 只放个人设计练习，不放任何公司（Whale、Alivia 等）的材料或数据。真想放，要么拿到公司同意，要么换场景重新做一份独立的练习。
+- 只放个人设计练习，不放任何雇主的材料或数据。
 - 演示数据要写明是演示，不写成「当前值」「已上线」。
 - 首页和预览图用原型真截图，不用插画。
-- 主页不挂公众号。
 - 置顶只放最好的四五个；弱的或过时的就归档，不删。
 
 ## 定期看一眼（每季度一次，或者要把链接发给别人之前）
