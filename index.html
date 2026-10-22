@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>赵永明 · AI 产品作品集</title>
+<meta name="description" content="关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。这里收着我做过的产品设计练习，有可点击的高保真原型、PRD 和几份行业研究，每个都能直接在浏览器里打开。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="赵永明 · AI 产品作品集">
+<meta property="og:description" content="8 个 AI 产品设计作品：多 Agent 客服、AI 问数、AI 医嘱、慢病管理、汽车与医疗零售场景全景、企业 AI 落地白皮书。">
+<meta property="og:image" content="https://panglezym.github.io/assets/og.png">
+<meta property="og:url" content="https://panglezym.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root {
+  --ink: #1a1714; --ink2: #5c5650; --ink3: #9a938b; --line: #ece8e3; --soft: #f7f5f2;
+  --accent: #2747d6; --radius: 18px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #fff; color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+header.top { display: flex; justify-content: space-between; align-items: center; padding: 26px 0; font-size: 15px; }
+header.top .mark { font-weight: 700; letter-spacing: .02em; text-decoration: none; }
+header.top nav a { color: var(--ink2); text-decoration: none; margin-left: 22px; }
+header.top nav a:hover { color: var(--ink); }
+.hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center; padding: 40px 0 72px; }
+.hero h1 { font-size: 60px; line-height: 1.1; margin: 0 0 14px; letter-spacing: .01em; }
+.hero .role { font-size: 19px; color: var(--ink2); margin: 0 0 26px; }
+.hero .lead { font-size: 17px; color: var(--ink); margin: 0 0 28px; max-width: 34em; }
+.chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.chips li { font-size: 14px; padding: 6px 14px; border: 1.5px solid var(--ink); border-radius: 999px; }
+.hero figure { margin: 0; }
+.hero figure img { width: 100%; height: auto; display: block; border-radius: var(--radius); }
+.section-head { display: flex; align-items: baseline; justify-content: space-between; border-top: 1.5px solid var(--ink); padding: 22px 0 30px; }
+.section-head h2 { font-size: 28px; margin: 0; }
+.section-head span { color: var(--ink3); font-size: 15px; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 36px; padding-bottom: 80px; }
+.work { display: flex; flex-direction: column; }
+.shot { display: block; border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(0,0,0,.08); background: #fff; aspect-ratio: 3 / 2; box-shadow: 0 10px 30px rgba(40,30,20,.08); }
+.shot img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+.shot:hover img { transform: scale(1.03); }
+.body { padding: 20px 4px 0; }
+.no { font-size: 13px; color: var(--ink3); margin: 0 0 6px; font-variant-numeric: tabular-nums; letter-spacing: .08em; }
+.work h3 { font-size: 22px; line-height: 1.35; margin: 0; }
+.en { font-size: 14px; color: var(--ink3); margin: 4px 0 12px; }
+.desc { font-size: 15.5px; color: var(--ink2); margin: 0 0 14px; }
+.tags { list-style: none; padding: 0; margin: 0 0 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li { font-size: 13px; color: var(--ink2); background: var(--soft); padding: 3px 10px; border-radius: 6px; }
+.links { margin: 0; font-size: 15px; display: flex; gap: 20px; }
+.links a { text-decoration: none; color: var(--ink2); border-bottom: 1.5px solid transparent; }
+.links a:hover { border-bottom-color: currentColor; }
+.links a.primary { color: var(--accent); font-weight: 600; }
+footer { border-top: 1.5px solid var(--line); padding: 28px 0 48px; font-size: 14px; color: var(--ink3); }
+footer p { margin: 0 0 6px; }
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 16px; }
+  .hero h1 { font-size: 44px; }
+  .grid { grid-template-columns: 1fr; gap: 44px; }
+}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="mark" href="https://panglezym.github.io/">panglezym</a>
+      <nav><a href="#works">作品</a><a href="https://github.com/panglezym" target="_blank" rel="noopener">GitHub</a></nav>
+    </header>
+    <section class="hero">
+      <div>
+        <h1>赵永明</h1>
+        <p class="role">AI 产品经理 · AI Product Manager</p>
+        <p class="lead">关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。这里收着我做过的产品设计练习，有可点击的高保真原型、PRD 和几份行业研究，每个都能直接在浏览器里打开。</p>
+        <ul class="chips"><li>多 Agent 系统</li><li>RAG 与知识图谱</li><li>数据产品</li><li>数字健康</li></ul>
+      </div>
+      <figure><img src="assets/hero.jpg" alt="王者荣耀智能客服、AI 医嘱任务引擎、慢愈患者端三个作品的界面截图" width="1200" height="820"></figure>
+    </section>
+    <div class="section-head" id="works"><h2>作品</h2><span>8 个 · 点图片直接打开</span></div>
+    <section class="grid">
+      <article class="work">
+        <a class="shot" href="https://panglezym.github.io/Honor-of-Kings-Intelligent-Customer-Service-Agent/" target="_blank" rel="noopener">
+          <img src="assets/works/hok.jpg" alt="王者荣耀 · 多 Agent 智能客服 的界面截图" loading="lazy" width="1200" height="800">
+        </a>
+        <div class="body">
+          <p class="no">01</p>
+          <h3>王者荣耀 · 多 Agent 智能客服</h3>
+          <p class="en">Multi-Agent Customer Service for Honor of Kings</p>
+          <p class="desc">为日均 5 万咨询、7 种语言设计的客服系统：5 个专域 Agent 并行处理复合问题，知识图谱多跳检索，超时熔断后三级降级升人工。设计文档和可点击演示合在一个页面里。</p>
+          <ul class="tags"><li>多 Agent</li><li>知识图谱</li><li>游戏客服</li></ul>
+          <p class="links"><a class="primary" href="https://panglezym.github.io/Honor-of-Kings-Intelligent-Customer-Service-Agent/" target="_blank" rel="noopener">在线看 →</a><a href="https://github.com/panglezym/Honor-of-Kings-Intelligent-Customer-Service-Agent" target="_blank" rel="noopener">仓库</a></p>
+        </div>
+      </article>
+      <article class="work">
+        <a class="shot" href="https://panglezym.github.io/AI-Powered-Data-Query-Platform/" target="_blank" rel="noopener">
+          <img src="assets/works/data-query.jpg" alt="AI 问数平台 的界面截图" loading="lazy" width="1200" height="800">
+        </a>
+        <div class="body">
+          <p class="no">02</p>
+          <h3>AI 问数平台</h3>
+          <p class="en">AI-Powered Data Query Platform</p>
+          <p class="desc">让不会写 SQL 的人用一句话拿到可信的数：指标语义层统一口径，行级权限在 SQL 层强制注入，每个回答都带口径和数据截止时间。9 个页面的高保真原型，附 PRD。</p>
+          <ul class="tags"><li>Text-to-SQL</li><li>语义层</li><li>数据产品</li></ul>
+          <p class="links"><a class="primary" href="https://panglezym.github.io/AI-Powered-Data-Query-Platform/" target="_blank" rel="noopener">在线看 →</a><a href="https://github.com/panglezym/AI-Powered-Data-Query-Platform" target="_blank" rel="noopener">仓库</a></p>
+        </div>
+      </article>
+      <article class="work">
+        <a class="shot" href="https://panglezym.github.io/AI-Medical-Order-Execution-Engine/" target="_blank" rel="noopener">
+          <img src="assets/works/medical-order.jpg" alt="AI 医嘱任务引擎 的界面截图" loading="lazy" width="1200" height="800">
+        </a>
+        <div class="body">
+          <p class="no">03</p>
+          <h3>AI 医嘱任务引擎</h3>
+          <p class="en">AI Medical Order Execution Engine</p>
+          <p class="desc">康养中心的医嘱闭环：医生用自然语言下医嘱，AI 解析成结构化字段并拆成护士任务，扫腕带和药品双码核验后自动回写。医生、护士、管理三端 22 页原型，附 PRD。</p>
+          <ul class="tags"><li>医疗</li><li>工作流</li><li>人机协同</li></ul>
+          <p class="links"><a class="primary" href="https://panglezym.github.io/AI-Medical-Order-Execution-Engine/" target="_blank" rel="noopener">在线看 →</a><a href="https://github.com/panglezym/AI-Medical-Order-Execution-Engine" target="_blank" rel="noopener">仓库</a></p>
+        </div>
+      </article>
+      <article class="work">
+        <a class="shot" href="https://panglezym.github.io/chronic-care-patient/" target="_blank" rel="noopener">
+          <img src="assets/works/chronic-patient.jpg" alt="慢愈 · 患者端 的界面截图" loading="lazy" width="1200" height="800">
+        </a>
+        <div class="body">
+          <p class="no">04</p>
+          <h3>慢愈 · 患者端</h3>
+          <p class="en">Chronic Care · Patient App</p>
+          <p class="desc">给糖尿病、高血压等慢病患者的健康管理 App：录数据、看 AI 分析、执行医嘱、做月度复盘。16 屏 iOS 高保真原型，附 PRD。</p>
+          <ul class="tags"><li>数字健康</li><li>iOS 原型</li></ul>
+          <p class="links"><a class="primary" href="https://panglezym.github.io/chronic-care-patient/" target="_blank" rel="noopener">在线看 →</a><a href="https://github.com/panglezym/chronic-care-patient" target="_blank" rel="noopener">仓库</a></p>
+        </div>
+      </article>
+      <article class="work">
+        <a class="shot" href="https://panglezym.github.io/chronic-care-doctor/" target="_blank" rel="noopener">
+          <img src="assets/works/chronic-doctor.jpg" alt="慢愈 · 医生端 的界面截图" loading="lazy" width="1200" height="800">
+        </a>
+        <div class="body">
+          <p class="no">05</p>
+          <h3>慢愈 · 医生端</h3>
+          <p class="en">Chronic Care · Doctor Portal</p>
+          <p class="desc">让主治医生在两次复诊之间也看得到病人：预警中心、远程医嘱、AI 月报审阅、临床 AI 助手。9 页 Web Portal 原型，和患者端成对。</p>
+          <ul class="tags"><li>数字健康</li><li>Web 原型</li></ul>
+          <p class="links"><a class="primary" href="https://panglezym.github.io/chronic-care-doctor/" target="_blank" rel="noopener">在线看 →</a><a href="https://github.com/panglezym/chronic-care-doctor" target="_blank" rel="noopener">仓库</a></p>
+        </div>
+      </article>
+      <article class="work">
+        <a class="shot" href="https://panglezym.github.io/Landscape-of-AI-Agent-Scenarios-in-the-Automotive-Industry/" target="_blank" rel="noopener">
+          <img src="assets/works/auto.jpg" alt="汽车行业 Agent 场景全景 的界面截图" loading="lazy" width="1200" height="800">
+        </a>
+        <div class="body">
+          <p class="no">06</p>
+          <h3>汽车行业 Agent 场景全景</h3>
+          <p class="en">AI Agent Scenarios in the Automotive Industry</p>
+          <p class="desc">28 个场景覆盖车内体验、销售服务、运营管理、产业服务，每个场景写到定位、功能、架构、落地路径、KPI 和风险，另附 7 条跨场景协同链路。</p>
+          <ul class="tags"><li>行业研究</li><li>汽车</li></ul>
+          <p class="links"><a class="primary" href="https://panglezym.github.io/Landscape-of-AI-Agent-Scenarios-in-the-Automotive-Industry/" target="_blank" rel="noopener">在线看 →</a><a href="https://github.com/panglezym/Landscape-of-AI-Agent-Scenarios-in-the-Automotive-Industry" target="_blank" rel="noopener">仓库</a></p>
+        </div>
+      </article>
+      <article class="work">
+        <a class="shot" href="https://panglezym.github.io/Overview-of-AI-Agent-Use-Cases-in-Healthcare-Retail/" target="_blank" rel="noopener">
+          <img src="assets/works/health-retail.jpg" alt="医疗零售智能体全景 的界面截图" loading="lazy" width="1200" height="800">
+        </a>
+        <div class="body">
+          <p class="no">07</p>
+          <h3>医疗零售智能体全景</h3>
+          <p class="en">AI Agent Use Cases in Healthcare Retail</p>
+          <p class="desc">药店、医药电商、互联网医院等零售侧的 16 个智能体场景，每个都有产品方案、技术架构、三期落地路径和合规风险分析。</p>
+          <ul class="tags"><li>行业研究</li><li>医疗零售</li></ul>
+          <p class="links"><a class="primary" href="https://panglezym.github.io/Overview-of-AI-Agent-Use-Cases-in-Healthcare-Retail/" target="_blank" rel="noopener">在线看 →</a><a href="https://github.com/panglezym/Overview-of-AI-Agent-Use-Cases-in-Healthcare-Retail" target="_blank" rel="noopener">仓库</a></p>
+        </div>
+      </article>
+      <article class="work">
+        <a class="shot" href="https://github.com/panglezym/China-Enterprise-AI-Landing-Strategy-White-Paper-2026#readme" target="_blank" rel="noopener">
+          <img src="assets/works/white-paper.jpg" alt="2026 中国企业 AI 落地战略白皮书 的界面截图" loading="lazy" width="1200" height="800">
+        </a>
+        <div class="body">
+          <p class="no">08</p>
+          <h3>2026 中国企业 AI 落地战略白皮书</h3>
+          <p class="en">China Enterprise AI Landing Strategy 2026</p>
+          <p class="desc">写给企业决策者：市场周期判断、AI 优先的组织设计、RAG 与 Agent 的技术路径、四个行业的场景图谱，以及风险与治理。五章加附录。</p>
+          <ul class="tags"><li>战略</li><li>白皮书</li></ul>
+          <p class="links"><a class="primary" href="https://github.com/panglezym/China-Enterprise-AI-Landing-Strategy-White-Paper-2026#readme" target="_blank" rel="noopener">阅读全文 →</a><a href="https://github.com/panglezym/China-Enterprise-AI-Landing-Strategy-White-Paper-2026" target="_blank" rel="noopener">仓库</a></p>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <p>这里的作品都是个人产品设计练习，不含任何公司内部数据；王者荣耀等品牌名只用来设定场景，与品牌方无关。</p>
+      <p>© 2026 赵永明 · 内容仅供学习交流，转载请注明出处。</p>
+    </footer>
+  </div>
+</body>
+</html>
