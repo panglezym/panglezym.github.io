@@ -1,7 +1,7 @@
 {
   "owner": "panglezym",
   "name": "赵永明",
-  "role": "AI 产品经理 · AI Product Manager",
+  "role": "关注 AI Agent 的行业落地",
   "lead": "关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。这里收着我做过的产品设计练习，有可点击的高保真原型、PRD 和几份行业研究，还有一个装上就能用的 Claude Code skill。",
   "focus": [
     "多 Agent 系统",
@@ -10,8 +10,8 @@
     "数字健康"
   ],
   "note": "这里的作品都是个人作品，不含任何公司内部数据；王者荣耀等品牌名只用来设定场景，与品牌方无关。",
-  "profile_intro": "AI 产品经理，关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。",
-  "profile_intro_en": "AI product manager, working on how AI agents land in real industries.",
+  "profile_intro": "关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。",
+  "profile_intro_en": "Working on how AI agents land in real industries.",
   "og_summary": "Claude Code skill、多 Agent 客服、AI 问数、AI 医嘱、慢病管理、汽车与医疗零售场景全景、企业 AI 落地白皮书",
   "og_lines": [
     "Claude Code skill、多 Agent 客服、",
