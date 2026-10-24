@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>赵永明 · AI 产品作品集</title>
-<meta name="description" content="关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。这里收着我做过的产品设计练习，有可点击的高保真原型、PRD 和几份行业研究，每个都能直接在浏览器里打开。">
+<meta name="description" content="关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。这里收着我做过的产品设计练习，有可点击的高保真原型、PRD 和几份行业研究，还有一个装上就能用的 Claude Code skill。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="赵永明 · AI 产品作品集">
-<meta property="og:description" content="8 个 AI 产品设计作品：多 Agent 客服、AI 问数、AI 医嘱、慢病管理、汽车与医疗零售场景全景、企业 AI 落地白皮书。">
+<meta property="og:description" content="9 个 AI 产品设计作品：Claude Code skill、多 Agent 客服、AI 问数、AI 医嘱、慢病管理、汽车与医疗零售场景全景、企业 AI 落地白皮书。">
 <meta property="og:image" content="https://panglezym.github.io/assets/og.png">
 <meta property="og:url" content="https://panglezym.github.io/">
 <meta name="twitter:card" content="summary_large_image">
@@ -73,19 +73,32 @@ footer p { margin: 0 0 6px; }
       <div>
         <h1>赵永明</h1>
         <p class="role">AI 产品经理 · AI Product Manager</p>
-        <p class="lead">关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。这里收着我做过的产品设计练习，有可点击的高保真原型、PRD 和几份行业研究，每个都能直接在浏览器里打开。</p>
+        <p class="lead">关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。这里收着我做过的产品设计练习，有可点击的高保真原型、PRD 和几份行业研究，还有一个装上就能用的 Claude Code skill。</p>
         <ul class="chips"><li>多 Agent 系统</li><li>RAG 与知识图谱</li><li>数据产品</li><li>数字健康</li></ul>
       </div>
       <figure><img src="assets/hero.jpg" alt="王者荣耀 · 多 Agent 智能客服、AI 医嘱任务引擎、慢愈 · 患者端三个作品的界面截图" width="1200" height="820"></figure>
     </section>
-    <div class="section-head" id="works"><h2>作品</h2><span>8 个 · 点图片直接打开</span></div>
+    <div class="section-head" id="works"><h2>作品</h2><span>9 个 · 点图片直接打开</span></div>
     <section class="grid">
+      <article class="work">
+        <a class="shot" href="https://github.com/panglezym/show-receipts#readme" target="_blank" rel="noopener">
+          <img src="assets/works/show-receipts.jpg" alt="show-receipts · 拿出证据 的界面截图" loading="lazy" width="1200" height="800">
+        </a>
+        <div class="body">
+          <p class="no">01</p>
+          <h3>show-receipts · 拿出证据</h3>
+          <p class="en">A Claude Code skill that audits claims against your own evidence</p>
+          <p class="desc">给 Claude Code 用的 skill：文档发出去之前，拿仓库文件和作者底稿把每条说法对一遍账，每条带证据、分三档，核不动的外部事实不乱判。做了两轮对照评测，召回和不装持平，报告的聚焦度从七成升到九成，答案和原始报告全部公开。</p>
+          <ul class="tags"><li>Claude Code</li><li>Agent Skill</li><li>对照评测</li></ul>
+          <p class="links"><a class="primary" href="https://github.com/panglezym/show-receipts#readme" target="_blank" rel="noopener">阅读全文 →</a><a href="https://github.com/panglezym/show-receipts" target="_blank" rel="noopener">仓库</a></p>
+        </div>
+      </article>
       <article class="work">
         <a class="shot" href="https://panglezym.github.io/Honor-of-Kings-Intelligent-Customer-Service-Agent/" target="_blank" rel="noopener">
           <img src="assets/works/hok.jpg" alt="王者荣耀 · 多 Agent 智能客服 的界面截图" loading="lazy" width="1200" height="800">
         </a>
         <div class="body">
-          <p class="no">01</p>
+          <p class="no">02</p>
           <h3>王者荣耀 · 多 Agent 智能客服</h3>
           <p class="en">Multi-Agent Customer Service for Honor of Kings</p>
           <p class="desc">为日均 5 万咨询、7 种语言设计的客服系统：5 个专域 Agent 并行处理复合问题，知识图谱多跳检索，超时熔断后三级降级升人工。设计文档和可点击演示合在一个页面里。</p>
@@ -98,7 +111,7 @@ footer p { margin: 0 0 6px; }
           <img src="assets/works/data-query.jpg" alt="AI 问数平台 的界面截图" loading="lazy" width="1200" height="800">
         </a>
         <div class="body">
-          <p class="no">02</p>
+          <p class="no">03</p>
           <h3>AI 问数平台</h3>
           <p class="en">AI-Powered Data Query Platform</p>
           <p class="desc">让不会写 SQL 的人用一句话拿到可信的数：指标语义层统一口径，行级权限在 SQL 层强制注入，每个回答都带口径和数据截止时间。9 个页面的高保真原型，附 PRD。</p>
@@ -111,7 +124,7 @@ footer p { margin: 0 0 6px; }
           <img src="assets/works/medical-order.jpg" alt="AI 医嘱任务引擎 的界面截图" loading="lazy" width="1200" height="800">
         </a>
         <div class="body">
-          <p class="no">03</p>
+          <p class="no">04</p>
           <h3>AI 医嘱任务引擎</h3>
           <p class="en">AI Medical Order Execution Engine</p>
           <p class="desc">康养中心的医嘱闭环：医生用自然语言下医嘱，AI 解析成结构化字段并拆成护士任务，扫腕带和药品双码核验后自动回写。医生、护士、管理三端 22 页原型，附 PRD。</p>
@@ -124,7 +137,7 @@ footer p { margin: 0 0 6px; }
           <img src="assets/works/chronic-patient.jpg" alt="慢愈 · 患者端 的界面截图" loading="lazy" width="1200" height="800">
         </a>
         <div class="body">
-          <p class="no">04</p>
+          <p class="no">05</p>
           <h3>慢愈 · 患者端</h3>
           <p class="en">Chronic Care · Patient App</p>
           <p class="desc">给糖尿病、高血压等慢病患者的健康管理 App：录数据、看 AI 分析、执行医嘱、做月度复盘。16 屏 iOS 高保真原型，附 PRD。</p>
@@ -137,7 +150,7 @@ footer p { margin: 0 0 6px; }
           <img src="assets/works/chronic-doctor.jpg" alt="慢愈 · 医生端 的界面截图" loading="lazy" width="1200" height="800">
         </a>
         <div class="body">
-          <p class="no">05</p>
+          <p class="no">06</p>
           <h3>慢愈 · 医生端</h3>
           <p class="en">Chronic Care · Doctor Portal</p>
           <p class="desc">让主治医生在两次复诊之间也看得到病人：预警中心、远程医嘱、AI 月报审阅、临床 AI 助手。9 页 Web Portal 原型，和患者端成对。</p>
@@ -150,7 +163,7 @@ footer p { margin: 0 0 6px; }
           <img src="assets/works/auto.jpg" alt="汽车行业 Agent 场景全景 的界面截图" loading="lazy" width="1200" height="800">
         </a>
         <div class="body">
-          <p class="no">06</p>
+          <p class="no">07</p>
           <h3>汽车行业 Agent 场景全景</h3>
           <p class="en">AI Agent Scenarios in the Automotive Industry</p>
           <p class="desc">28 个场景覆盖车内体验、销售服务、运营管理、产业服务，每个场景写到定位、功能、架构、落地路径、KPI 和风险，另附 7 条跨场景协同链路。</p>
@@ -163,7 +176,7 @@ footer p { margin: 0 0 6px; }
           <img src="assets/works/health-retail.jpg" alt="医疗零售智能体全景 的界面截图" loading="lazy" width="1200" height="800">
         </a>
         <div class="body">
-          <p class="no">07</p>
+          <p class="no">08</p>
           <h3>医疗零售智能体全景</h3>
           <p class="en">AI Agent Use Cases in Healthcare Retail</p>
           <p class="desc">药店、医药电商、互联网医院等零售侧的 16 个智能体场景，每个都有产品方案、技术架构、三期落地路径和合规风险分析。</p>
@@ -176,7 +189,7 @@ footer p { margin: 0 0 6px; }
           <img src="assets/works/white-paper.jpg" alt="2026 中国企业 AI 落地战略白皮书 的界面截图" loading="lazy" width="1200" height="800">
         </a>
         <div class="body">
-          <p class="no">08</p>
+          <p class="no">09</p>
           <h3>2026 中国企业 AI 落地战略白皮书</h3>
           <p class="en">China Enterprise AI Landing Strategy 2026</p>
           <p class="desc">写给企业决策者：市场周期判断、AI 优先的组织设计、RAG 与 Agent 的技术路径、四个行业的场景图谱，以及风险与治理。五章加附录。</p>
@@ -186,7 +199,7 @@ footer p { margin: 0 0 6px; }
       </article>
     </section>
     <footer>
-      <p>这里的作品都是个人产品设计练习，不含任何公司内部数据；王者荣耀等品牌名只用来设定场景，与品牌方无关。</p>
+      <p>这里的作品都是个人作品，不含任何公司内部数据；王者荣耀等品牌名只用来设定场景，与品牌方无关。</p>
       <p>© 2026 赵永明 · 内容仅供学习交流，转载请注明出处。</p>
     </footer>
   </div>

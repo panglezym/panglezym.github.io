@@ -2,20 +2,20 @@
   "owner": "panglezym",
   "name": "赵永明",
   "role": "AI 产品经理 · AI Product Manager",
-  "lead": "关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。这里收着我做过的产品设计练习，有可点击的高保真原型、PRD 和几份行业研究，每个都能直接在浏览器里打开。",
+  "lead": "关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。这里收着我做过的产品设计练习，有可点击的高保真原型、PRD 和几份行业研究，还有一个装上就能用的 Claude Code skill。",
   "focus": [
     "多 Agent 系统",
     "RAG 与知识图谱",
     "数据产品",
     "数字健康"
   ],
-  "note": "这里的作品都是个人产品设计练习，不含任何公司内部数据；王者荣耀等品牌名只用来设定场景，与品牌方无关。",
+  "note": "这里的作品都是个人作品，不含任何公司内部数据；王者荣耀等品牌名只用来设定场景，与品牌方无关。",
   "profile_intro": "AI 产品经理，关注 AI Agent 怎么落到具体行业里：多 Agent 系统设计、知识库与 RAG、数据产品，以及医疗、汽车、游戏客服这些场景。",
   "profile_intro_en": "AI product manager, working on how AI agents land in real industries.",
-  "og_summary": "多 Agent 客服、AI 问数、AI 医嘱、慢病管理、汽车与医疗零售场景全景、企业 AI 落地白皮书",
+  "og_summary": "Claude Code skill、多 Agent 客服、AI 问数、AI 医嘱、慢病管理、汽车与医疗零售场景全景、企业 AI 落地白皮书",
   "og_lines": [
-    "多 Agent 客服、AI 问数、",
-    "AI 医嘱、慢病管理、行业场景全景"
+    "Claude Code skill、多 Agent 客服、",
+    "AI 问数、AI 医嘱、慢病管理、行业全景"
   ],
   "hero": [
     "hok",
@@ -23,6 +23,37 @@
     "chronic-patient"
   ],
   "works": [
+    {
+      "slug": "show-receipts",
+      "repo": "show-receipts",
+      "title": "show-receipts · 拿出证据",
+      "title_lines": [
+        "show-receipts",
+        "拿出证据"
+      ],
+      "en": "A Claude Code skill that audits claims against your own evidence",
+      "short": "Claude Code skill：发布前拿材料核对每条说法，附两轮对照评测",
+      "desc": "给 Claude Code 用的 skill：文档发出去之前，拿仓库文件和作者底稿把每条说法对一遍账，每条带证据、分三档，核不动的外部事实不乱判。做了两轮对照评测，召回和不装持平，报告的聚焦度从七成升到九成，答案和原始报告全部公开。",
+      "tags": [
+        "Claude Code",
+        "Agent Skill",
+        "对照评测"
+      ],
+      "pages": false,
+      "shot": {
+        "viewport": [
+          1280,
+          853
+        ],
+        "steps": [
+          {
+            "js": "(() => { const e = document.getElementById('readme') || document.querySelector('article.markdown-body'); if (e) { e.scrollIntoView(); window.scrollBy(0, -16); } })()",
+            "wait": 1000
+          }
+        ],
+        "comment": "GitHub 仓库页的 README 开头：标题、一句话定位、「它是什么，不是什么」"
+      }
+    },
     {
       "slug": "hok",
       "repo": "Honor-of-Kings-Intelligent-Customer-Service-Agent",
